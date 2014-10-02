@@ -14,19 +14,19 @@ MARKET_PRICE_DERIVE_NUM_POINTS = 8 #number of last trades over which to derive t
 
 # FROM counterpartyd
 # NOTE: These constants must match those in counterpartyd/lib/config.py
-REGULAR_DUST_SIZE = 5430
-MULTISIG_DUST_SIZE = 5430 * 2
+REGULAR_DUST_SIZE = 6000
+MULTISIG_DUST_SIZE = 6000 * 2
 ORDER_BTC_DUST_LIMIT_CUTOFF = MULTISIG_DUST_SIZE
 
 mongo_db = None #will be set on server init
 
-BTC = 'BTC'
-XCP = 'XCP'
+BTC = 'MYR'
+XCP = 'XCM'
 
 MAX_REORG_NUM_BLOCKS = 10 #max reorg we'd likely ever see
 
 ARMORY_UTXSVR_PORT_MAINNET = 6590
 ARMORY_UTXSVR_PORT_TESTNET = 6591
 
-QUOTE_ASSETS = ['BTC', 'XBTC', 'XCP'] # define the priority for quote asset
-MARKET_LIST_QUOTE_ASSETS = ['XCP', 'XBTC', 'BTC'] # define the order in the market list
+QUOTE_ASSETS = ['MYR', 'XMYR', 'XCM'] # define the priority for quote asset
+MARKET_LIST_QUOTE_ASSETS = ['XCM', 'XMYR', 'MYR'] # define the order in the market list

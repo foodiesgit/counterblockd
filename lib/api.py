@@ -1144,7 +1144,7 @@ def serve_api(mongo_db, redis_client):
             
         asset_info = mongo_db.tracked_assets.find_one({'asset': asset})
         if not asset_info:
-            raise Exception("Asset does not exist.")
+            raise Exception("XAsset does not exist.")
             
         now_ts = time.mktime(datetime.datetime.utcnow().timetuple())
         if not end_ts: #default to current datetime
